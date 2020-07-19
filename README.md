@@ -26,7 +26,7 @@ services:
   git-pullpush:
     image: t7k312/pullpush
     environment:
-      - SSH_KEY=-----BEGIN RSA PRIVATE KEY-----\nasgashHJhjkshhwASqjhljqHGL\njaahhiugUHIEHGThuaiugafgighausga...ghsiuaHGUI\n5xeGwwRPjLFzf6MucA+lKqVH7ZxJ3k15\n-----END RSA PRIVATE KEY-----
+      - SSH_KEY=-----BEGIN RSA PRIVATE KEY-----\nasgashHJhjkshhwASqjhljqHGL\njaahhiugUHIEHGThuaiugafgighausga...ghsiuaHGUI\n5xJ3k15\n-----END RSA PRIVATE KEY-----
       - URL=https://github.com/Telepuz/dots
       - TIMEOUT=300
     volumes:
