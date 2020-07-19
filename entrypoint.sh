@@ -21,6 +21,7 @@ main () {
     cd "$REPO_DIR"
     while true; do
         git fetch --all
+        git pull
         git push
         sleep "$TIMEOUT"
     done
