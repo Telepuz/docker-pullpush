@@ -20,6 +20,5 @@ RUN echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 VOLUME $REPO_DIR
 
 # ENTRYPOINT
-USER git
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
