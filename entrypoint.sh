@@ -13,9 +13,6 @@ main () {
     eval "$(ssh-agent -s)"
     echo -e "$GIT_SSH_KEY" | ssh-add -
 
-    # Change permissions
-    chown -R $UID:$GID $REPO_DIR
-
     # Check if repo exist
     if [[ ! -d $REPO_DIR/.git ]]; then
         git clone "$GIT_URL" "$REPO_DIR"

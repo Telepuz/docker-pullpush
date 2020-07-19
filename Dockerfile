@@ -5,14 +5,7 @@ MAINTAINER Lex White <t7k312@gmail.com>
 ENV SSH_KEY="" \
     URL="github.com" \
     TIMEOUT="300" \
-    REPO_DIR=/repo \
-    UID="1000" \
-    GID="1000"
-
-# Create user for service
-RUN groupadd -g $GID git \
-    && useradd -u $UID -r -d $REPO_DIR -g $GID -m -s /sbin/nologin \
-        -c "Git pull/push Application User" git
+    REPO_DIR=/repo
 
 # Install depencies
 RUN apt update && \
